@@ -1,0 +1,38 @@
+{
+  "singing": {
+    "shortTitle": "AT for Singing",
+    "fullTitle": "Alexander Technique for Singing",
+    "description": "Resources specifically geared toward singers",
+    "image": "./images/singing.jpg"
+  },
+  "blogs": {
+    "shortTitle": "Teachers and Blogs",
+    "fullTitle": "Teachers and Blogs",
+    "description": "An assortment of blogs and sites run by individual teachers and studios",
+    "image": "./images/teacher.jpg"
+  },
+  "general": {
+    "shortTitle": "General Info",
+    "fullTitle": "General Information",
+    "description": "Basic information about Alexander Technique including key principles and history",
+    "image": "./images/info.jpg"
+  },
+  "science": {
+    "shortTitle": "Scientific",
+    "fullTitle": "Scientific Research",
+    "description": "Collections of published scientific articles relating to Alexander Technique",
+    "image": "./images/science.jpg"
+  },
+  "communities": {
+    "shortTitle": "Communities",
+    "fullTitle": "Alexander Technique Communities",
+    "description": "Professional organizations and casual groups that one can join",
+    "image": "./images/community.jpg"
+  },
+  "media": {
+    "shortTitle": "Multimedia",
+    "fullTitle": "Multimedia",
+    "description": "Videos and audio content about Alexander Technique to enrich your understanding",
+    "image": "./images/media.jpg"
+  }
+}

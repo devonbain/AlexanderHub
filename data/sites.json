@@ -1,0 +1,76 @@
+[
+  {
+    "url": "https://alexandertechnique.com/",
+    "title": "AlexanderTechnique.com",
+    "description": "A general, comprehensive guide to AT. Includes a location-based teacher finder, information for musicians, and links to many external resources.",
+    "categories": ["general"]
+  },
+  {
+    "url": "https://www.amsatonline.org/",
+    "title": "American Society for the Alexander Technique",
+    "description": "An organization for professional AT practitioners; students can find a professionally certified AT teacher.",
+    "categories": ["general", "communities"]
+  },
+  {
+    "url": "https://alexandertechnique.co.uk/",
+    "title": "Society of Teachers of the Alexander Technique",
+    "description": "An organization for professional AT practitioners with information of general interest.",
+    "categories": ["general", "communities"]
+  },
+  {
+    "url": "https://www.alexandercenter.com/",
+    "title": "Alexander Technique Center of Washington",
+    "description": "A Washington D.C.-based organization with general information about the history and theory of AT.",
+    "categories": ["general", "communities"]
+  },
+  {
+    "url": "https://alexandertechniquescience.com/",
+    "title": "Alexander Technique Science",
+    "description": "An overview of scientific research on AT, articles, videos, and general information.",
+    "categories": ["science"]
+  },
+  {
+    "url": "https://www.alexanderstudiesonline.com/",
+    "title": "Alexander Studies Online",
+    "description": "Has a curated database of research and a community for people interested in the scientific side of AT.",
+    "categories": ["science", "communities"]
+  },
+  {
+    "url": "https://bodylearningcast.com/singers",
+    "title": "Body Learning Podcast",
+    "description": "An Alexander Technique podcast with a number of episodes about singing.",
+    "categories": ["media", "singing"]
+  },
+  {
+    "url": "https://www.alexanderaudio.com/applications/singing/",
+    "title": "Alexander Audio: The Alexander Technique, Singing and Voice",
+    "description": "A collection of interviews about Alexander Technique and the voice.",
+    "categories": ["media", "singing"]
+  },
+  {
+    "url": "https://www.atsinging.com/tips",
+    "title": "ATsinging Tips Blog",
+    "description": "The blog of a NYC-based AT studio with many in-depth posts on AT and singing.",
+    "categories": ["blogs", "singing"]
+  },
+  {
+    "url": "https://freebodyfreevoice.com/blog",
+    "title": "Free Body Free Voice - Blog",
+    "description": "Michael Hanko, a voice/AT teacher in NYC with an entertaining and accessible blog.",
+    "categories": ["blogs", "singing"]
+  },
+  {
+    "url": "https://cantarestudio.com/blog%3A-embodied-thought",
+    "title": "Cantare Studio - Blog: Embodied Thought",
+    "description": "Marieke Schuurs, voice/AT teacher. Blog posts are short and interesting.",
+    "categories": ["blogs", "singing"]
+  },
+  {
+    "url": "https://thebricelandstudio.com/articles",
+    "title": "The Briceland Studio - Articles",
+    "description": "Alicia Briceland, voice/AT teacher with many informative articles on AT and general singing topics.",
+    "categories": ["blogs", "singing"]
+  }
+
+
+]
