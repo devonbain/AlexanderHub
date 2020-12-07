@@ -1,2 +1,2 @@
 # AlexanderHub
-A site that has a collection of Alexander Technique resources for singers.
+A site that has a collection of Alexander Technique resources (mainly for singers).
