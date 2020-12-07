@@ -34,5 +34,11 @@
     "fullTitle": "Multimedia",
     "description": "Videos and audio content about Alexander Technique to enrich your understanding",
     "image": "./images/media.jpg"
+  },
+  "all": {
+    "shortTitle": "All Links",
+    "fullTitle": "All Links",
+    "description": "The full list of every resource on the site.",
+    "image": "./images/info.jpg"
   }
 }

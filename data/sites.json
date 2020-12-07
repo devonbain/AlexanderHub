@@ -61,8 +61,8 @@
   },
   {
     "url": "https://cantarestudio.com/blog%3A-embodied-thought",
-    "title": "Cantare Studio - Blog: Embodied Thought",
-    "description": "Marieke Schuurs, voice/AT teacher. Blog posts are short and interesting.",
+    "title": "Cantare Studio - Embodied Thought",
+    "description": "Marieke Schuurs, voice/AT teacher. Her blog has short and thought-provoking posts.",
     "categories": ["blogs", "singing"]
   },
   {
@@ -70,6 +70,42 @@
     "title": "The Briceland Studio - Articles",
     "description": "Alicia Briceland, voice/AT teacher with many informative articles on AT and general singing topics.",
     "categories": ["blogs", "singing"]
+  },
+  {
+    "url": "https://www.youtube.com/playlist?list=PLWjPz8RBAAd176u5ep1bRvaAYCzPhZXFO",
+    "title": "Alexander Technique Youtube Playlist",
+    "description": "A collection of about 50 Alexander Technique videos including instructional videos, interviews, lectures, and historical videos",
+    "categories": ["media", "general"]
+  },
+  {
+    "url": "https://debiadamsat.com/",
+    "title": "Debi Adams",
+    "description": "Alexander teacher who teaches at Boston Conservatory. Her website includes a blog and links to research, resources, workshops.",
+    "categories": ["blogs"]
+  },
+  {
+    "url": "https://www.betsypolatin.com/",
+    "title": "Betsy Polatin",
+    "description": "Boston-based Alexander teacher; site includes general info about AT and reasons to study it",
+    "categories": ["blogs"]
+  },
+  {
+    "url": "http://www.andreamatthews.com",
+    "title": "Andrea Matthews",
+    "description": "Operatic soprano and Alexander teacher; site has several articles she's written on AT",
+    "categories": ["blogs", "singing"]
+  },
+  {
+    "url": "http://mindfulnessforthebody.com/",
+    "title": "Harry Hobbs",
+    "description": "Boston-based Alexander teacher who gives private lessons",
+    "categories": ["blogs"]
+  },
+  {
+    "url": "https://www.alexandervideo.com/",
+    "title": "Alexander Video",
+    "description": "Many videos showing different applications of Alexander Technique",
+    "categories": ["media"]
   }
 
 

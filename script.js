@@ -1,4 +1,4 @@
-var categories =  {};
+var categories;
 var sites;
 
 async function loadJson(file) {
@@ -6,8 +6,16 @@ async function loadJson(file) {
   return await response.json();
 }
 
+async function showRandomQuote() {
+  quotes = await loadJson('./data/quotes.json');
+  var quote = quotes[Math.floor(Math.random() * quotes.length)];
+  $("#quote").text(quote);
+}
+
 async function showCategories() {
-  categories = await loadJson('./data/categories.json');
+  if (!categories) {
+    categories = await loadJson('./data/categories.json');
+  }
 
   var keys = Object.keys(categories);
 
@@ -40,12 +48,22 @@ async function loadSitesByCategory() {
     site["categories"].forEach(category => {
       sites[category].push(site);
     });
+    sites["all"].push(site);
+  });
+
+  // Sort alphabetical
+  Object.keys(categories).forEach(key => {
+    sites[key].sort(function(a, b) {
+      if (a["title"] < b["title"]) return -1;
+      if (a["title"] > b["title"]) return 1;
+      return 0;
+    })
   });
 
 }
 
 async function showLinks(category) {
-  if (!sites) { await loadSitesByCategory(); }
+  if (sites == null) { await loadSitesByCategory(); }
 
   $("#linkList").html(""); // clear any previous links
 
@@ -59,29 +77,66 @@ async function showLinks(category) {
   })
 }
 
+async function makeLinkView(category) {
+
+  // Display category information
+  if (categories == null) {
+    categories = await loadJson('./data/categories.json');
+  }
+
+  if (categories[category]) {
+    $("#categories").hide();
+    $("#links").show();
+
+    showLinks(category);
+    $("#title").text(categories[category].fullTitle);
+    $("#description").text(categories[category].description);
+  } else {
+    window.location.href= "index.html";
+  }
+
+}
+
 
 $(document).ready(function() {
+  // Check for category in the URL
+  var url = new URL(window.location.href);
+  var category = url.searchParams.get("category");
+  if (category) {
+    // Show page for specific category
+    makeLinkView(category);
+  } else {
+    // Show the main page
+    showCategories();
+  }
 
-  showCategories();
+  showRandomQuote();
+
+  // Hide footer
+  $(".avoid .button").click(function() {
+    $("#footer").fadeOut(300);
+  })
 
   // Click on category
   $("#categories").on("click", ".category-image", function() {
 
-    $(".hero").css("height", "20vh");
-    $("#categories").hide();
-    $("#links").show();
-
-    // Display category information
     var currentCategory = $(this).attr("id");
-    $("#title").text(categories[currentCategory].fullTitle);
-    $("#description").text(categories[currentCategory].description);
-    showLinks(currentCategory);
+    window.history.replaceState(null, null, "?category=" + currentCategory);
+    makeLinkView(currentCategory);
+
   });
+
+  $("#allLinks").on("click", function() {
+    window.history.replaceState(null, null, "?category=all");
+    makeLinkView("all");
+  })
 
   // Click on back button from a category
   $("#back").on("click", function() {
+    window.history.replaceState(null, null, "index.html");
     $("#links").hide();
     $("#categories").show();
+    if ($("#categoryList").text() == "") { showCategories(); }
   })
 
 })

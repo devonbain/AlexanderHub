@@ -9,20 +9,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico">
+
 
 </head>
 
 <body>
 
   <div id="footer">
-    <img src="images/alexander.png" alt="F.M. says hi"/>
+    <div class="container">
+      <img src="images/alexander.png" alt="F.M. says hi"/>
+
+      <div class="avoid">
+        <p id="quote"></p>
+        <div class='button'>Thanks F.M.</div>
+      </div>
+    </div>
   </div>
 
+  <div id="suggestions">
+    <a href="https://forms.gle/EwcmrAzRgACspt976" target="_blank">Suggestions/Feedback?</a>
+  </div>
   <div class="hero">
 
     <div>
-      <h1>Alexander Hub</h1>
-      <p>A collection of Alexander Technique resources for singers</p>
+      <h1>AlexanderHub</h1>
+      <p>A collection of Alexander Technique resources</p>
     </div>
 
   </div>
@@ -37,7 +49,7 @@
     </div>
 
     <div class="image-container" id="categories">
-      <p class="headerText">Browse by Category</p>
+      <p class="headerText">Browse by Category / <span id="allLinks">See All Links</span></p>
       <div id="categoryList"></div>
     </div>
   </div>
