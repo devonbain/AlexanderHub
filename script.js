@@ -121,8 +121,9 @@ $(document).ready(function() {
   $("#categories").on("click", ".category-image", function() {
 
     var currentCategory = $(this).attr("id");
-    window.history.replaceState(null, null, "?category=" + currentCategory);
-    makeLinkView(currentCategory);
+    location.href += "?category=" + currentCategory;
+    //window.history.replaceState(null, null, "?category=" + currentCategory);
+    //makeLinkView(currentCategory);
 
   });
 
